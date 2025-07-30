@@ -3,8 +3,10 @@ import { Sandpack } from "@codesandbox/sandpack-react";
 
 export default function MiraPlayground() {
   return (
+ <div className="rounded-lg border border-gray-300 shadow-inner overflow-hidden">
     <Sandpack
       template="react"
+      theme="dark"
       files={{
         "/App.js": {
           code: `
@@ -33,5 +35,6 @@ export default App;
         editorHeight: 400,
       }}
     />
+</div>
   );
 }
